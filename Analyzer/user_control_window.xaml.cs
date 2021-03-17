@@ -19,7 +19,7 @@ namespace Analyzer
         [SuppressMessage("StyleCop.CSharp.NamingRules", "SA1300:ElementMustBeginWithUpperCaseLetter", Justification = "Default event handler naming pattern")]
 
 
-        private string result = "";
+ 
         String[] code;
         string KeyWords =
             "\\b(alignas|alignof|and|and_eq|asm|auto|bitand|bitor|bool|break|case|catch|char|char16_t|char32_t" +

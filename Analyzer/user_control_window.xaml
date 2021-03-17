@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Analyzer.CodeAnalyzerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             Name="UserControl" d:DesignWidth="470" d:DesignHeight="450">
+
+
+    <Grid Name="MCGrid" Background="LightSteelBlue">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" x:Name="FunctionsInformation" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25" />
+                        <RowDefinition Height="45" />
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Column="0" Grid.Row="0" Content="Update" Grid.ColumnSpan="4" Click="ButtonUpdate" Foreground="White" Background="SteelBlue" Height="25"  Name="button1" />
+
+                    <TextBlock FontSize="12" FontWeight="Bold" Grid.Row="1" Grid.Column="0" Foreground="DarkBlue"   
+                   Text="Function Name" Height="20" VerticalAlignment="Top"  />
+                    <TextBlock FontSize="12" FontWeight="Bold" Grid.Row="1" Grid.Column="1" Foreground="DarkBlue"    
+                   Text="Line Number" Height="20"  HorizontalAlignment="Center" VerticalAlignment="Top" />
+                    <TextBlock FontSize="12" FontWeight="Bold" Grid.Row="1" Grid.Column="2" Foreground="DarkBlue"    
+                  Height="40"  HorizontalAlignment="Center" VerticalAlignment="Top">Comment Line <LineBreak/>Number</TextBlock>
+                    <TextBlock FontSize="12" FontWeight="Bold" Grid.Row="1" Grid.Column="3" Foreground="DarkBlue"   
+                  Height="40" HorizontalAlignment="Center" VerticalAlignment="Top">Keywords<LineBreak/>Number</TextBlock>
+                </Grid>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
+
